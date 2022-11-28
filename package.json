@@ -1,0 +1,29 @@
+{
+  "name": "ts-lib-create",
+  "description": "A tool to create Typescript libraries faster.",
+  "author": "M1nx <m1nxd3v@gmail.com> (https://m1nx.dev/)",
+  "version": "1.0.2",
+  "main": "/dist/index.js",
+  "bin": {
+    "ts-lib-create": "./dist/index.js"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && echo d | xcopy template dist\\template /e"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "minimist": "^1.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/fs-extra": "^9.0.13",
+    "typescript": "^4.9.3"
+  },
+  "keywords": [
+    "typescript",
+    "tool",
+    "cli",
+    "templates"
+  ]
+}
